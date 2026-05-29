@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import SkillBadge from '../components/SkillBadge';
 
-const HomePage = ({ tema, toggleTema }) => {
+const HomePage = () => {
   const [perfil] = useState({
     nombre: 'Leandro Saiz Zoni',
     titulo: 'Desarrollador Frontend',
@@ -18,9 +18,6 @@ const HomePage = ({ tema, toggleTema }) => {
         <p className="lead">{perfil.titulo}</p>
         <p>{perfil.descripcion}</p>
         <div className="mt-4">
-          <button className={tema === 'dark' ? 'btn btn-outline-light me-2' : 'btn btn-outline-dark me-2'} onClick={toggleTema}>
-            {tema === 'light' ? 'Cambiar a modo oscuro' : 'Cambiar a modo claro'}
-          </button>
           <Link to="/contact" className="btn btn-primary">
             Contactarme
           </Link>
