@@ -10,6 +10,7 @@
   --accent-dark: #0846d1;
   --accent-bg: rgba(11, 92, 255, 0.08);
   --accent-border: rgba(11, 92, 255, 0.28);
+  --on-dark: #f8fafc; /* color de texto sobre fondos oscuros */
   --social-bg: rgba(15, 23, 36, 0.04);
   --shadow: rgba(2,6,23,0.08) 0 8px 20px -4px;
 
@@ -73,7 +74,7 @@ body {
 }
 .bg-dark {
   background-color: var(--bg-dark) !important;
-  color: var(--text) !important;
+  color: var(--on-dark) !important;
 }
 
 .btn-primary {
@@ -110,23 +111,23 @@ body {
 .navbar.navbar-dark .btn,
 .navbar.bg-dark .btn,
 .navbar.navbar-dark .nav-link {
-  color: var(--text-h) !important;
+  color: var(--on-dark) !important;
 }
 
 /* Abarcar botones outline y botones dentro de un contenedor .bg-dark */
 .navbar.bg-dark .btn-outline-light,
 .bg-dark .btn-outline-light,
 .navbar.bg-dark .btn-outline-secondary {
-  color: var(--text-h) !important;
-  border-color: var(--text-h) !important;
+  color: var(--on-dark) !important;
+  border-color: var(--on-dark) !important;
 }
 
 /* Ajustes hover para mantener legibilidad */
 .navbar.bg-dark .btn-outline-light:hover,
 .bg-dark .btn-outline-light:hover {
   background-color: transparent !important;
-  color: var(--text-h) !important;
-  border-color: var(--text-h) !important;
+  color: var(--on-dark) !important;
+  border-color: var(--on-dark) !important;
 }
 
 h1,
