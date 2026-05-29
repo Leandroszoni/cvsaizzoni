@@ -1,27 +1,27 @@
 :root {
-  --text: #6b6375;
-  --text-h: #08060d;
-  --bg: #fff;
-  --border: #e5e4e7;
-  --code-bg: #f4f3ec;
-  --accent: #aa3bff;
-  --accent-bg: rgba(170, 59, 255, 0.1);
-  --accent-border: rgba(170, 59, 255, 0.5);
-  --social-bg: rgba(244, 243, 236, 0.5);
-  --shadow:
-    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+  /* Paleta profesional: azul oscuro + gris neutro + fondo claro */
+  --text: #374151; /* gris oscuro para texto */
+  --text-h: #0f1724; /* encabezados más oscuros */
+  --bg: #f7f9fc; /* fondo principal */
+  --bg-dark: #0b1220; /* fondo para modo oscuro */
+  --border: #e6eef6;
+  --code-bg: #f1f5f9;
+  --accent: #0b5cff; /* azul profesional */
+  --accent-dark: #0846d1;
+  --accent-bg: rgba(11, 92, 255, 0.08);
+  --accent-border: rgba(11, 92, 255, 0.28);
+  --social-bg: rgba(15, 23, 36, 0.04);
+  --shadow: rgba(2,6,23,0.08) 0 8px 20px -4px;
 
-  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
-  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --sans: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
-  font: 18px/145% var(--sans);
+  font: 18px/1.45 var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
   background: var(--bg);
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -32,17 +32,17 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --text: #9ca3af;
-    --text-h: #f3f4f6;
-    --bg: #16171d;
-    --border: #2e303a;
-    --code-bg: #1f2028;
-    --accent: #c084fc;
-    --accent-bg: rgba(192, 132, 252, 0.15);
-    --accent-border: rgba(192, 132, 252, 0.5);
-    --social-bg: rgba(47, 48, 58, 0.5);
-    --shadow:
-      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+    --text: #cbd5e1;
+    --text-h: #f8fafc;
+    --bg: var(--bg-dark);
+    --border: #1f2a37;
+    --code-bg: #0f1724;
+    --accent: #3aa0ff;
+    --accent-dark: #1e7edb;
+    --accent-bg: rgba(58,160,255,0.08);
+    --accent-border: rgba(58,160,255,0.18);
+    --social-bg: rgba(255,255,255,0.03);
+    --shadow: rgba(2,6,23,0.6) 0 8px 20px -4px;
   }
 
   #social .button-icon {
@@ -64,6 +64,43 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+}
+
+/* Estilos globales para botones y background profesional */
+.bg-light {
+  background-color: var(--bg) !important;
+  color: var(--text) !important;
+}
+.bg-dark {
+  background-color: var(--bg) !important;
+  color: var(--text-h) !important;
+}
+
+.btn-primary {
+  background-color: var(--accent) !important;
+  border-color: var(--accent-dark) !important;
+  color: #ffffff !important;
+  box-shadow: var(--shadow);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--accent-dark) !important;
+  border-color: var(--accent-dark) !important;
+  color: #fff !important;
+}
+.btn-outline-primary {
+  color: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+.btn-outline-primary:hover {
+  color: #fff !important;
+  background-color: var(--accent) !important;
+  border-color: var(--accent-dark) !important;
+}
+
+.badge.bg-primary {
+  background-color: var(--accent) !important;
+  color: #fff !important;
 }
 
 h1,
