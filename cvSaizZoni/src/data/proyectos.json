@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "nombre": "Mi Primer Sitio Web",
+    "descripcion": "Primer proyecto web creado con HTML, CSS y JavaScript. Un sitio personal con información de contacto y galería de imágenes.",
+    "imagen": "https://via.placeholder.com/400x250",
+    "tecnologias": ["HTML", "CSS", "JavaScript"],
+    "link": "https://github.com/tuusuario/mi-primer-sitio"
+  },
+  {
+    "id": 2,
+    "nombre": "App de Tareas",
+    "descripcion": "Aplicación de lista de tareas con funcionalidad de agregar, eliminar y marcar como completadas. Desarrollada con React y localStorage.",
+    "imagen": "https://via.placeholder.com/400x250",
+    "tecnologias": ["React", "JavaScript", "Bootstrap"],
+    "link": "https://github.com/tuusuario/app-tareas"
+  }
+]
