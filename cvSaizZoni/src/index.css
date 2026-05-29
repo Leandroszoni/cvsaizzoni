@@ -72,8 +72,8 @@ body {
   color: var(--text) !important;
 }
 .bg-dark {
-  background-color: var(--bg) !important;
-  color: var(--text-h) !important;
+  background-color: var(--bg-dark) !important;
+  color: var(--text) !important;
 }
 
 .btn-primary {
@@ -101,6 +101,28 @@ body {
 .badge.bg-primary {
   background-color: var(--accent) !important;
   color: #fff !important;
+}
+
+/* Forzar texto negro en elementos de navegación y toggle en modo 'dark' visualmente */
+.bg-dark .navbar .navbar-brand,
+.bg-dark .navbar .nav-link,
+.bg-dark .navbar .nav-item,
+.bg-dark .navbar .btn,
+.bg-dark .btn {
+  color: #000 !important;
+}
+
+/* Si el botón es outline-light en modo dark, asegurar texto y borde negros */
+.bg-dark .btn-outline-light {
+  color: #000 !important;
+  border-color: #000 !important;
+}
+
+/* Ajustes hover para mantener legibilidad */
+.bg-dark .btn-outline-light:hover {
+  background-color: transparent !important;
+  color: #000 !important;
+  border-color: #000 !important;
 }
 
 h1,
