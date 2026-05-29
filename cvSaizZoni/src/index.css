@@ -1,8 +1,8 @@
 :root {
   /* Paleta profesional: azul oscuro + gris neutro + fondo claro */
-  --text: #374151; /* gris oscuro para texto */
-  --text-h: #0f1724; /* encabezados más oscuros */
-  --bg: #f7f9fc; /* fondo principal */
+  --text: #0f1724; /* texto más oscuro para garantizar contraste */
+  --text-h: #071225; /* encabezados más oscuros */
+  --bg: #e6eef6; /* fondo principal más oscuro y neutro */
   --bg-dark: #0b1220; /* fondo para modo oscuro */
   --border: #e6eef6;
   --code-bg: #f1f5f9;
