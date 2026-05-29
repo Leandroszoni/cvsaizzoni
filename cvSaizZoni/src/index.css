@@ -109,20 +109,20 @@ body {
 .bg-dark .navbar .nav-item,
 .bg-dark .navbar .btn,
 .bg-dark .btn {
-  color: #000 !important;
+  color: var(--text-h) !important;
 }
 
-/* Si el botón es outline-light en modo dark, asegurar texto y borde negros */
+/* Si el botón es outline-light en modo dark, asegurar texto y borde claros */
 .bg-dark .btn-outline-light {
-  color: #000 !important;
-  border-color: #000 !important;
+  color: var(--text-h) !important;
+  border-color: var(--text-h) !important;
 }
 
 /* Ajustes hover para mantener legibilidad */
 .bg-dark .btn-outline-light:hover {
   background-color: transparent !important;
-  color: #000 !important;
-  border-color: #000 !important;
+  color: var(--text-h) !important;
+  border-color: var(--text-h) !important;
 }
 
 h1,
