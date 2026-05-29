@@ -104,21 +104,25 @@ body {
 }
 
 /* Forzar texto negro en elementos de navegación y toggle en modo 'dark' visualmente */
-.bg-dark .navbar .navbar-brand,
-.bg-dark .navbar .nav-link,
-.bg-dark .navbar .nav-item,
-.bg-dark .navbar .btn,
-.bg-dark .btn {
+.navbar.bg-dark .navbar-brand,
+.navbar.bg-dark .nav-link,
+.navbar.bg-dark .nav-item,
+.navbar.navbar-dark .btn,
+.navbar.bg-dark .btn,
+.navbar.navbar-dark .nav-link {
   color: var(--text-h) !important;
 }
 
-/* Si el botón es outline-light en modo dark, asegurar texto y borde claros */
-.bg-dark .btn-outline-light {
+/* Abarcar botones outline y botones dentro de un contenedor .bg-dark */
+.navbar.bg-dark .btn-outline-light,
+.bg-dark .btn-outline-light,
+.navbar.bg-dark .btn-outline-secondary {
   color: var(--text-h) !important;
   border-color: var(--text-h) !important;
 }
 
 /* Ajustes hover para mantener legibilidad */
+.navbar.bg-dark .btn-outline-light:hover,
 .bg-dark .btn-outline-light:hover {
   background-color: transparent !important;
   color: var(--text-h) !important;
