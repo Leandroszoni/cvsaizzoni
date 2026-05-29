@@ -19,7 +19,7 @@ const HomePage = () => {
         <p>{perfil.descripcion}</p>
         <div className="mt-4">
           <Link to="/contact" className="btn btn-primary">
-            Contactarme
+            Enviar mensaje
           </Link>
         </div>
       </section>
